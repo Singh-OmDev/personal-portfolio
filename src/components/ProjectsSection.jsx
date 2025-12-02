@@ -3,7 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Modern UI-Maker",
+    title: "AI Government Scheme Advisor",
     description:
       "A web application that helps Indian citizens understand which government schemes they may be eligible for, what documents are required, and how to apply.",
     image: "/projects/project1.png",
