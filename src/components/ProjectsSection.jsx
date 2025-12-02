@@ -4,11 +4,19 @@ const projects = [
   {
     id: 1,
     title: "Modern UI-Maker",
-    description: "ModernUI Maker is an AI-powered UI component generator that helps developers quickly create modern, responsive, and reusable components for web applications.",
+    description:
+      "A web application that helps Indian citizens understand which government schemes they may be eligible for, what documents are required, and how to apply.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", ],
-    demoUrl: "https://modern-ui-maker-trd4.vercel.app/",
-    githubUrl: "https://github.com/Singh-OmDev/ModernUI-Maker?tab=readme-ov-file",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Llama 3.3",
+    ],
+    demoUrl: "https://ai-government-scheme-advisor.vercel.app/",
+    githubUrl: "https://github.com/Singh-OmDev/AI-Government-Scheme-Advisor",
   },
   {
     id: 2,
@@ -16,7 +24,7 @@ const projects = [
     description:
       "A modern React Router v7 project that fetches and displays real-time country data using the REST Countries API.",
     image: "/projects/project2.png",
-    tags: ["ReactJS", "RRV7", "TailwindCSS", "Typescript"],
+    tags: ["ReactJS", "RRV7", "TailwindCSS", "TypeScript"],
     demoUrl: "https://react-router-v7-countries-app-seven.vercel.app/",
     githubUrl: "https://github.com/Singh-OmDev/-React-Router-V7-Countries-App",
   },
@@ -25,9 +33,8 @@ const projects = [
     title: "Modern Website",
     description: `A modern and responsive website built using HTML, CSS, and JavaScript.
 It features a clean design, smooth animations, and user-friendly layout.`,
-
     image: "/projects/project3.png",
-    tags: ["React","tailwind","HTML 5" ,],
+    tags: ["React", "Tailwind", "HTML5"],
     demoUrl: "https://modern-website-nine-navy.vercel.app/",
     githubUrl: "https://github.com/Singh-OmDev/modern-website",
   },
@@ -38,8 +45,7 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -48,9 +54,9 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
@@ -64,21 +70,26 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
+
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
                       href={project.demoUrl}
                       target="_blank"
+                      rel="noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
@@ -86,6 +97,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
@@ -101,6 +113,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/Singh-OmDev"
           >
             Check My Github <ArrowRight size={16} />
