@@ -18,16 +18,32 @@ const projects = [
     demoUrl: "https://ai-government-scheme-advisor.vercel.app/",
     githubUrl: "https://github.com/Singh-OmDev/AI-Government-Scheme-Advisor",
   },
+
   {
     id: 2,
-    title: "React Router V7 Countries App",
+    title: "AI-Job-Description",
     description:
-      "A modern React Router v7 project that fetches and displays real-time country data using the REST Countries API.",
+      "A powerful web application that helps job seekers tailor their resumes to specific job descriptions using advanced AI. It analyzes your resume against a JD, provides an ATS score, and generates optimized content to help you get hired.",
     image: "/projects/project2.png",
-    tags: ["ReactJS", "RRV7", "TailwindCSS", "TypeScript"],
-    demoUrl: "https://react-router-v7-countries-app-seven.vercel.app/",
-    githubUrl: "https://github.com/Singh-OmDev/-React-Router-V7-Countries-App",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Lucide Icons",
+      "React Router",
+      "Node.js",
+      "Express",
+      "Multer",
+      "Groq SDK (Llama 3.3 70B)",
+      "BCrypt",
+      "JWT Authentication",
+      "pdf-parse",
+    ],
+    demoUrl: "https://ai-job-description-gamma.vercel.app/",
+    githubUrl:
+      "https://github.com/Singh-OmDev/AI-Job-Description?tab=readme-ov-file",
   },
+
   {
     id: 3,
     title: "Modern Website",
