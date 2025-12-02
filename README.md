@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
- [**Live Demo**](https://personal-portfolio-6yfn.vercel.app/)
+ live demo -> (https://personal-portfolio-6yfn.vercel.app/)
 
 
 
