@@ -1,10 +1,10 @@
 # 🌐 Personal Portfolio Website
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+ live demo -> https://personal-portfolio-6yfn.vercel.app/
 
-[**Live Demo**](https://personal-portfolio-6yfn.vercel.app/)
+
+
+
 
 <img width="1898" height="869" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/9b0f0c0b-1ea6-4907-805f-a0c05fb8eea5" />
 
